@@ -1,0 +1,17 @@
+.container{
+  height: 500px;
+  display: flex;
+}
+.one{
+  width: 40%;
+  background-color: blue;
+}
+.two{
+  width: 60%;
+  background-color: brown;
+}
+@media screen and (max-width: 740px){
+  .content{
+    flex-direction: column;
+  }
+}
