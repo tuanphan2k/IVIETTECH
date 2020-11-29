@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" href="./Images/town_hall_logo.gif">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter13</title>
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> -->
+</head>
+
+<body>
+  <header>
+    <div class="headerContainer">
+      <img src="./Images/town_hall_logo.gif" alt="Town Hall logo" height="80">
+      <div>
+        <h2>San Joaquin Valley Town Hall</h2>
+        <h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
+      </div>
+    </div>
+  </header>
+  <nav class="nav-main">
+    <ul class="nav-list">
+      <li><a class="nav-item" href="./index.html">Home</a></li>
+      <li><a class="nav-item" href="./index.html">Speakers</a></li>
+      <li><a class="nav-item" href="./index.html">Lucheons</a></li>
+      <li><a class="nav-item" href="./index.html">Tickets</a></li>
+      <li class="dropdown-menu">
+        <a class="nav-item" href="./index.html">About Us</a>
+        <ul class="dropdown-item">
+          <li><a class="nav-item" href="">Our History</a></li>
+          <li><a class="nav-item" href="">Board of Directiors</a></li>
+          <li><a class="nav-item" href="">Past Speakers</a></li>
+          <li><a class="nav-item" href="">Contact Information</a></li>
+        </ul>
+      </li>
+      <li>
+        <!-- <a href=""class="nav-item icon-menu"><i class="fas fa-bars"></i></a> -->
+        <a class="nav-item item-menu" href="./index.html">Menu</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="main">
+    <div class="sidebar">
+      <h2>Guest speaker</h2>
+      <div>
+        <h3>October<br><a href="./Speakers/toobin.html">Jeffrey Toobin</a></h3>
+        <img src="./Images/Toobin75.jpg" alt="Jeffrey Toobin" height="75">
+      </div>
+      <div>
+        <h3>October<br><a href="./Speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
+        <img src="./Images/Sorkin75.jpg" alt="Andrew Ross Sorkin" height="75">
+      </div>
+      <div>
+        <h3>October<br><a href="./Speakers/amychua.html">Amy Chua</a></h3>
+        <img src="./Images/AmyChua75.jpg" alt="Amy Chua" height="75">
+      </div>
+      <div>
+        <h3>February <br><a href="">Scott Sampson</a></h3>
+        <img src="./Images/Sampson.jpg" alt="Scott Sampson" height="75">
+      </div>
+    </div>
+    <div class="container">
+      <h2>Order Form</h2>
+      <div class="formMember">
+        <form action="#" method="POST">
+          <fieldset>
+            <legend><b>Member Information</b></legend>
+            <table align="center">
+              <tr>
+                <td class="right">E-Mail:</td>
+                <td><input type="email" name="mail"></td>
+              </tr>
+              <tr>
+                <td class="right">First Name:</td>
+                <td><input type="text" name="firstname"></td>
+              </tr>
+              <tr>
+                <td class="right">Last Name:</td>
+                <td><input type="text" name="lastname"></td>
+              </tr>
+              <tr>
+                <td class="right">Address:</td>
+                <td><input type="text" name="address"></td>
+              </tr>
+              <tr>
+                <td class="right">City:</td>
+                <td><input type="text" name="city"></td>
+              </tr>
+              <tr>
+                <td class="right">State:</td>
+                <td><input type="text" name="state" placeholder="2-Character code"></td>
+              </tr>
+              <tr>
+                <td class="right">Zip code:</td>
+                <td><input type="text" name="zipcode" pattern="[0-9]*" placeholder="3 of 9 digits"></td>
+              </tr>
+              <tr>
+                <td class="right">Phone number:</td>
+                <td><input type="tel" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="999-999-999"></td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+      </div>
+      <div class="formOrdering">
+        <form action="#" method="POST">
+          <fieldset>
+            <legend><b>Ordering Information</b></legend>
+            <table align="center">
+              <tr>
+                <td class="right">Order Type:</td>
+                <td>
+                  <select name="orderType" id="" class="fix">
+                    <option value="">Member of Package</option>
+                    <option value="">Member Single</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="right">Number of Tickets:</td>
+                <td><input type="text" placeholder="Number of single tickets"></td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+      </div>
+      <div class="formPaymemt">
+        <form action="#" method="POST">
+          <fieldset>
+            <legend><b>Payment Method</b></legend>
+            <table align="center">
+              <tr>
+                <td>
+                  <input type="radio" name="payment" id="rd1" value="billme">
+                  <label for="rd1">Bill me</label>
+                  <input type="radio" name="payment" id="rd2" value="creditcard">
+                  <label for="rd2">Credit Card</label>
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+      </div>
+      <div class="creditcardInfo">
+        <form action="#" method="POST">
+          <fieldset>
+            <legend><b>Credit Card Information</b></legend>
+            <table align="center">
+              <tr>
+                <td class="right">Card Type:</td>
+                <td>
+                  <select name="cardType" id="" class="fix">
+                    <option value="">Visa</option>
+                    <option value="">MasterCard</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="right">Card Number:</td>
+                <td><input type="text" placeholder="16 digits"></td>
+              </tr>
+              <tr>
+                <td class="right">Expiration date:</td>
+                <td>
+                  <select name="date" id="">
+                    <option value="">February</option>
+                    <option value="">March</option>
+                  </select>
+                  <select name="date" id="">
+                    <option value="">2017</option>
+                    <option value="">2020</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+        <div class="formSubmit">
+          <form action="#" method="POST">
+            <fieldset>
+              <legend><b>Submit Your Order</b></legend>
+              <table align="center">
+                <tr>
+                  <td>
+                    <input type="submit" value="Submit">
+                  </td>
+                  <td>
+                    <input type="submit" value="Reset Fields">
+                  </td>
+                </tr>
+              </table>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  </div>
+  <footer>
+    <p>&copy;2015, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+  </footer>
+</body>
+
+</html>

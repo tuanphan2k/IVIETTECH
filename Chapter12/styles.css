@@ -1,7 +1,4 @@
-/* *{
-  padding: 0px;
-  margin: 0px;
-} */
+
 body{
   width: 800px;
   font-family: Roboto;
@@ -19,8 +16,8 @@ header img{
 footer{
   background-color: #800000;
 }
-header img{
-  float: left;
+.HeaderMain{
+  display: flex;
 }
 header h2{
   font-size: 170%;
@@ -28,6 +25,7 @@ header h2{
   text-indent: 30px;
 }
 header h3{
+  margin-top: -25px;
   font-size: 130%;
   font-style: italic;
   text-indent: 30px;
@@ -71,43 +69,6 @@ main img{
 }
 .sidebar{
   width: 200px;
-}
-.maincontent{
-  padding: 0px 0px 10px 0px;
-  border-top: 2px #800000 solid;
-  border-bottom: 2px #800000 solid;
-}
-.readmore{
-  display: flex;
-}
-h4{
-  margin: 0px 0px 15px 0px;
-}
-.container h2{
-  margin: 10px 0px 0px 0px;
-}
-.container h1{
-  margin: 0px 0px 10px 0px;
-}
-.infor h3{
-  margin: 3px 0px 0px 0px;
-}
-.infor p{
-  margin: 3px 0px 4px 0px;
-}
-.ticket h2{
-  margin: 10px 0px -10px 0px;
-}
-.content{
-  display: flex;
-}
-.infor{
-  height: 300px;
-  width: 400px;
-}
-.imgaes{
-  width: calc(100% - 150px);
-  position: relative;
 }
 .imgaes img{
   height: 200px;
@@ -159,4 +120,24 @@ nav{
 }
 .dropdown-item li{
   margin: 0px;
+}
+table{
+  border-collapse: collapse;
+}
+th, td{
+  padding: 5px;
+}
+tr:nth-child(4n){
+  border-top: solid 1px red;
+}
+tr:last-child{
+  border-top: solid 1px red;
+  border-bottom: solid 1px red;
+}
+tr:first-child{
+  border-top: solid 1px red;
+  border-bottom: solid 1px red;
+}
+.foot{
+  text-align: right;
 }
