@@ -153,7 +153,7 @@ nav{
 }
 .nav-list a:hover{
   color: white;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   font-style:italic;
 }
 .dropdown-menu{
