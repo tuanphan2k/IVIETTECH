@@ -20,21 +20,15 @@
   padding: 10px 0px;
 }
 .nav-content{
-  display: flex;
+  /* display: flex; */
   font-size: 110%;
   padding: 10px 0px;
-}
-.drop{
-  background-color: white;
 }
 .nav-list{
   position: relative;
   display: flex;
   list-style-type: none;
   padding: 0px;
-}
-.item-menu{
-  display: none;
 }
 .nav-list a:hover{
   background-color: rgba(0, 0, 0, 0.1);
